@@ -11,13 +11,15 @@
     <title>About me</title>
 </head>
 <body>
-    <div class="row space-between row-height1">
+    <div class="row space-between row-height1 large-screen-view">
         <div class="one-third">
             <img src="images/Amsterdam2.jpg" alt="Amsterdam Tulips" class="img-lg">
         </div>
         <div class="one-third col center-align gray-bg overlap-container">
             <img src="images/Amsterdam1.jpg" alt="Amsterdam Houses" class="img-md padded-img">
-            <p class="text-lg title top-center text-center">Favorite place: Amsterdam</p>
+            <p class="centered">
+                <button>Favorite place: Amsterdam</button>
+            </p>
         </div>
         <div class="dark-bg col center-align one-third">
             <p class="padded-text">
@@ -26,7 +28,22 @@
             </p>
         </div>
     </div>
-    <div class="row row-height2">
+    <div class="col small-screen-view">
+        <div class="dark-bg row center-align full-padding">
+            <img src="images/Me.jpg" alt="Picture of me" class="img-square-sm">
+            <p class="padded-text">
+                <span>Nice to meet you!</span><br>
+                <span class="headline">My name is Emmelien and I'm from the Netherlands</span>
+            </p>
+        </div>
+        <div class="col center-align gray-bg overlap-container">
+            <img src="images/Amsterdam1.jpg" alt="Amsterdam Houses" class="img-lg">
+            <div class="centered">
+                <button>Favorite place: Amsterdam</button>
+            </div>
+        </div>
+    </div>
+    <div class="row row-height2 large-screen-view">
         <div class="col center-align light-bg">
             <div class="padded-text">
                 <p class="text-lg title">
@@ -56,7 +73,43 @@
             </div>
         </div>
         <div class="overlap-container">
-            <img src="images/Nomads.png" alt="Nomads Restaurant" class="img-square">
+            <img src="images/Nomads.png" alt="Nomads Restaurant" class="img-square-md">
+            <div class="centered">
+                <a href="https://www.nomads-amsterdam.nl/">
+                    <button>Favorite restaurant</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col small-screen-view">
+        <div class="light-bg full-padding">
+            <p class="text-lg title">
+                Major: Web Technologies Graduate Certificate
+            </p>
+            <p>
+                I have built and deployed my own e-commerce web application, where I used a combination of CSS, HTML, Vanilla JavaScript, jQuery, Django (Python), PostgreSQL, Github, Docker and DigitalOcean to deploy the app. 
+                This whole process taught me a lot about web development, especially how different local development is compared to production-ready code.
+                I like web development because you can combine creativity with the technical aspects of implementing your designs.
+            </p>
+            <div class="form">
+                <p class="text-lg title">Subscribe to my newsletter!</p>
+                <form action="#" class="col">
+                    <label for="firstname" class="text-xs">First name</label>
+                    <input type="text" name="firstname" required>
+                    <label for="lastname" class="text-xs">Last name</label>
+                    <input type="text" name="lastname" required>
+                    <label for="email" class="text-xs">Email</label>
+                    <input type="text" name="email" required>
+                    <div class="row space-xs-bottom">
+                        <input type="checkbox" name="permission">
+                        <label for="permission">I give permission to be added to the list</label>
+                    </div>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="overlap-container">
+            <img src="images/Nomads.png" alt="Nomads Restaurant" class="img-square-md">
             <div class="centered">
                 <a href="https://www.nomads-amsterdam.nl/">
                     <button>Favorite restaurant</button>
