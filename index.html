@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Oranienbaum&display=swap" rel="stylesheet"> 
+    <title>About me</title>
+</head>
+<body>
+    <div class="row space-between row-height1">
+        <div class="one-third">
+            <img src="images/Amsterdam2.jpg" alt="Amsterdam Tulips" class="img-lg">
+        </div>
+        <div class="one-third col center-align gray-bg overlap-container">
+            <img src="images/Amsterdam1.jpg" alt="Amsterdam Houses" class="img-md padded-img">
+            <p class="text-lg title top-center text-center">Favorite place: Amsterdam</p>
+        </div>
+        <div class="dark-bg col center-align one-third">
+            <p class="padded-text">
+                <span>Nice to meet you!</span><br>
+                <span class="headline">My name is Emmelien and I'm from the Netherlands</span>
+            </p>
+        </div>
+    </div>
+    <div class="row row-height2">
+        <div class="col center-align light-bg">
+            <div class="padded-text">
+                <p class="text-lg title">
+                    Major: Web Technologies Graduate Certificate
+                </p>
+                <p>
+                    I have built and deployed my own e-commerce web application, where I used a combination of CSS, HTML, Vanilla JavaScript, jQuery, Django (Python), PostgreSQL, Github, Docker and DigitalOcean to deploy the app. 
+                    This whole process taught me a lot about web development, especially how different local development is compared to production-ready code.
+                    I like web development because you can combine creativity with the technical aspects of implementing your designs.
+                </p>
+                <div class="form">
+                    <p class="text-lg title">Subscribe to my newsletter!</p>
+                    <form action="#" class="col">
+                        <label for="firstname" class="text-xs">First name</label>
+                        <input type="text" name="firstname" required>
+                        <label for="lastname" class="text-xs">Last name</label>
+                        <input type="text" name="lastname" required>
+                        <label for="email" class="text-xs">Email</label>
+                        <input type="text" name="email" required>
+                        <div class="row space-xs-bottom">
+                            <input type="checkbox" name="permission">
+                            <label for="permission">I give permission to be added to the list</label>
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="overlap-container">
+            <img src="images/Nomads.png" alt="Nomads Restaurant" class="img-square">
+            <div class="centered">
+                <a href="https://www.nomads-amsterdam.nl/">
+                    <button>Favorite restaurant</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
